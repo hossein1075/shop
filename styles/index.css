@@ -1,0 +1,42 @@
+:root {
+--color-bg-div: #000000;
+--color-text-div: #FAFAFA;
+}
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%; /* 10px */
+}
+
+*, *:after, *:before {
+-webkit-box-sizing: inherit;
+        box-sizing: inherit;
+}
+.relative {
+    position: relative;
+}
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "Inter Regular";
+}
+a {
+    text-decoration: none !important;
+    color: var(--color-text-div) !important;
+}
+
+  /* nav */
+
+  .nav_form_input {
+    padding-right: 35px; 
+    width: 300px !important;
+    height: 32px !important;
+  }
+  
+  .nav_form_search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
