@@ -52,6 +52,7 @@
     .header_off {
         background-color: var(--color-bg-div);
         color: var(--color-text-div);
+        
     }
     .header_off_it {
         font-family: "Inter SemiBold";

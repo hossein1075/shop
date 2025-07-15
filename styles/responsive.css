@@ -1,25 +1,31 @@
 
 
 @media (min-width: 576px) { 
-    
+ 
  }
 
 
 @media (min-width: 768px) { 
-    
+    .nav_item {
+        top: 3.7rem !important; 
+        z-index: 100;
+       }
+       .header_bottom {
+        padding-top: 6rem;
+      }
  }
 
 
 @media (min-width: 992px) { 
-    
+  
  }
 
 
 @media (min-width: 1200px) { 
-    
+ 
  }
 
 
 @media (min-width: 1400px) { 
-    
+
  }
