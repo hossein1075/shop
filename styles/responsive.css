@@ -1,7 +1,9 @@
 
 
 @media (min-width: 576px) { 
- 
+  .carousel-inner {
+    min-height: 500px;
+  }
  }
 
 
@@ -13,6 +15,23 @@
        .header_bottom {
         padding-top: 6rem;
       }
+      .time_circle {
+        width: 5rem;
+        height: 5rem;
+      }
+      
+      .time_circle .number {
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1;
+      }
+      .time_circle .label {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+      }
+      .carousel-inner {
+        min-height: 230px;
+      }
  }
 
 
@@ -22,7 +41,9 @@
 
 
 @media (min-width: 1200px) { 
- 
+  .carousel-inner {
+    min-height: 280px;
+  }
  }
 
 

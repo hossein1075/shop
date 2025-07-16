@@ -1,62 +1,86 @@
 :root {
---color-bg-div: #000000;
---color-text-div: #FAFAFA;
-}
-html {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-size: 62.5%; /* 10px */
+  --color-bg-div: #000000;
+  --color-text-div: #FAFAFA;
 }
 
-*, *:after, *:before {
--webkit-box-sizing: inherit;
-        box-sizing: inherit;
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 10px */
 }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 .relative {
-    position: relative;
+  position: relative;
 }
+
 body {
-    line-height: 1.6;
-    font-size: 1.6rem;
-    font-family: "Inter Regular";
-    background-color: var(--color-text-div);
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: "Inter Regular";
+  /* background-color: var(--color-text-div); */
+  background-color: rebeccapurple;
 }
+
 a {
-    text-decoration: none !important;
-    color: var(--color-bg-div) !important;
+  text-decoration: none !important;
+  color: var(--color-bg-div) !important;
 }
+
 /* Font */
 
 .Medium {
-font-weight: 500;
+  font-weight: 500;
 }
+
 .SemiBold {
   font-weight: 600;
 }
+
 .Bold {
   font-weight: 700;
 }
+
 /* custom color */
 
 .green_c {
   color: #00FF66;
 }
+
 .green_bg {
   background-color: #00FF66 !important;
 }
-  /* nav */
-  .nav_item {
-   top: 5rem !important; 
-   z-index: 100;
-   transition: top 0.3s ease;
-   background-color: var(--color-text-div);
-  }
-  nav.navbar.nav_item.nav_item-scroll {
-    top: 0 !important;
-  }
+
+.red_sections-c {
+  color: #DB4444;
+}
+.red_sections-bg {
+  background-color: #DB4444;
+}
+
+/* nav */
+.nav_item {
+  top: 5rem !important;
+  z-index: 100;
+  transition: top 0.3s ease;
+  background-color: var(--color-text-div);
+}
+
+nav.navbar.nav_item.nav_item-scroll {
+  top: 0 !important;
+}
+
 .color {
   color: var(--color-bg-div) !important;
 }
+
 .hover_underline {
   position: relative;
   display: inline-block;
@@ -85,6 +109,7 @@ font-weight: 500;
 .hover_underline:hover::after {
   width: 100%;
 }
+
 .glass-dropdown .dropdown-menu {
   background: linear-gradient(135deg, rgba(136, 84, 208, 0.6), rgba(255, 20, 147, 0.6));
   backdrop-filter: blur(20px);
@@ -95,19 +120,20 @@ font-weight: 500;
   color: white;
 }
 
-  .nav_form_input {
-    padding-right: 35px; 
-    width: 300px !important;
-    height: 32px !important;
-  }
-  
-  .nav_form_search {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
+.nav_form_input {
+  padding-right: 35px;
+  width: 300px !important;
+  height: 32px !important;
+}
+
+.nav_form_search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 .nav_icon {
   padding-top: 6px;
   width: 25px;
@@ -120,6 +146,7 @@ font-weight: 500;
   background-color: aqua;
   margin-top: 60rem;
 }
+
 .icon {
   width: 24px;
   height: 24px;
@@ -139,28 +166,91 @@ header_bottom
   padding-top: 3rem;
   color: var(--color-text-div);
 }
+
 .slide--color {
   background-color: var(--color-bg-div);
 }
+
 .slide_shop {
   color: var(--color-text-div);
 }
+
 .slide_shop:hover {
   transition: all ease-in .1s;
-text-decoration: underline;
+  text-decoration: underline;
 }
+
 .carousel-inner {
-  min-height: 153.25px; 
+  min-height: 370px;
 }
 
 .carousel-item {
   min-height: 100%;
-  display: flex;
-  align-items: center;
 }
+
+.time_circles {
+
+}
+
+.time_circle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;       
+  justify-content: center;  
+  align-items: center;     
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-text-div);
+  color: var(--color-bg-div);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.3rem 0;
+}
+
+.time_circle .number {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.time_circle .label {
+  font-size: .7rem;
+  margin-top: 0.2rem;
+}
+
 
 /* 
 
 Main
 
 */
+
+/* section today */
+
+.title_today {
+  height: 3rem
+}
+.title_today::before {
+position: absolute;
+content: "";
+width: 2rem;
+height: 3rem;
+background-color: #DB4444;
+border-radius: .3rem;
+}
+.arrow_btn {
+  background-color: #F5F5F5;
+    width: 4rem;
+    display: inline-block;
+    height: 4rem;
+}
+.dot {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #DB4444;
+  margin: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
