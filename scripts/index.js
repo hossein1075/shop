@@ -139,7 +139,7 @@ cardElem.forEach(card => {
     }, 300);
   });
 });
-//  Off Slider
+//  Off Slider packageCard
 const cardWidth = card.offsetWidth + 16
 
 nextBtn.addEventListener('click', ()=> {
@@ -148,7 +148,7 @@ nextBtn.addEventListener('click', ()=> {
 preBtn.addEventListener('click', ()=> {
   slider.scrollLeft -= cardWidth
 })
-//  mobile // fot test
+//  mobile // for test
 let startX = 0
 
 slider.addEventListener('touchstart', (e)=> {

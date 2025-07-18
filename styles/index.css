@@ -272,16 +272,16 @@ border-radius: .3rem;
 }
 .card_img_wrapper {
   width: 100%;
-  height: 14rem; /* ارتفاع ثابت برای نگهدارنده */
+  height: 14rem; 
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* اگه عکس بزرگتر بود، اضافه‌اش رو مخفی کن */
+  overflow: hidden; 
 
 }
 .card_img--height {
   object-fit: contain;
-  margin: 0 auto; /* وسط‌چین بشه */
+  margin: 0 auto;
 }
 .card_off {
   position: absolute;
