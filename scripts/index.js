@@ -5,7 +5,13 @@ import { headerTop } from "../components/header/header-top.js"
 
 window.customElements.define('header-top', headerTop)
 window.customElements.define('footer-user', footerUser)
-
+//  Btn Card
+const cardElem = document.querySelectorAll('.card_product')
+//  Off Slider
+const slider = document.querySelector('.scroll-snap-x')
+const card = document.querySelector('.card_product')
+const nextBtn = document.querySelector('#nextBtn')
+const preBtn = document.querySelector('#prevBtn')
 //  nav
 document.addEventListener('DOMContentLoaded', function () {
   const nav = document.querySelector('nav.nav_item');
@@ -115,3 +121,65 @@ function startDiscountTimer(seconds) {
 }
 
 startDiscountTimer(25 * 24 * 60 * 60)
+
+//  Btn Card
+cardElem.forEach(card => {
+  const cardBtn = card.querySelector('.card_btn'); 
+
+  card.addEventListener('mouseenter', () => {
+    cardBtn.style.visibility = "visible";
+    cardBtn.style.opacity = "1";
+  });
+
+  card.addEventListener('mouseleave', () => {
+    cardBtn.style.opacity = "0";
+
+    setTimeout(() => {
+      cardBtn.style.visibility = "hidden";
+    }, 300);
+  });
+});
+//  Off Slider
+const cardWidth = card.offsetWidth + 16
+
+nextBtn.addEventListener('click', ()=> {
+  slider.scrollLeft += cardWidth
+})
+preBtn.addEventListener('click', ()=> {
+  slider.scrollLeft -= cardWidth
+})
+//  mobile // fot test
+let startX = 0
+
+slider.addEventListener('touchstart', (e)=> {
+  startX = e.touches[0].clientX;
+})
+slider.addEventListener('touchend', (e)=> {
+  let endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) {
+    console.log('رفتن به اسلاید بعدی');
+  } else if (endX - startX > 50) {
+    console.log('رفتن به اسلاید قبلی');
+  } else {
+    console.log('کشش کافی نبود'); 
+  }
+})
+
+//  btn_view
+window.addEventListener('DOMContentLoaded', ()=> {
+  const btnView = document.getElementById('btn_view');
+  //  mobile
+  btnView.addEventListener('click', ()=> {
+    btnView.classList.add('btn_view--hover')
+
+    setTimeout(()=> {
+      btnView.classList.remove('btn_view--hover')
+    }, 1000)
+  })
+  btnView.addEventListener('mouseenter', ()=> {
+    btnView.classList.add('btn_view--hover')
+  })
+  btnView.addEventListener('mouseleave', ()=> {
+    btnView.classList.remove('btn_view--hover')
+  })
+})
