@@ -68,6 +68,11 @@
     background-repeat: no-repeat;
     background-color: var(--color-bg-div);
   }
+
+  /* sign up */
+  main {
+    margin-top: 9rem;
+}
 }
 
 
