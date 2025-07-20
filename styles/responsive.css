@@ -1,52 +1,84 @@
-
-
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .carousel-inner {
     min-height: 500px;
   }
- }
+}
 
 
-@media (min-width: 768px) { 
-    .nav_item {
-        top: 3.7rem !important; 
-        z-index: 100;
-       }
-       .header_bottom {
-        padding-top: 6rem;
-      }
-      .time_circle {
-        width: 5rem;
-        height: 5rem;
-      }
-      
-      .time_circle .number {
-        font-size: 1.3rem;
-        font-weight: bold;
-        line-height: 1;
-      }
-      .time_circle .label {
-        font-size: 1rem;
-        margin-top: 0.2rem;
-      }
-      .carousel-inner {
-        min-height: 230px;
-      }
- }
+@media (min-width: 768px) {
+  .nav_item {
+    top: 3.7rem !important;
+    z-index: 100;
+  }
+
+  .header_bottom {
+    padding-top: 6rem;
+  }
+
+  .time_circle {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .time_circle .number {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .time_circle .label {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+
+  .carousel-inner {
+    min-height: 230px;
+  }
+
+  /* section new arrival */
+  .product_img_first {
+    background-image: url("../images/main/last-section/4.png");
+    height: 100%;
+    min-height: 52rem;
+  }
+
+  .product_img_second {
+    background-image: url("../images/main/last-section/1.png");
+    min-height: 24rem;
+    margin-bottom: 1rem;
+  }
+
+  .product_img_third {
+    background-image: url("../images/main/last-section/2.png");
+    min-height: 28rem;
+  }
+
+  .product_img_forth {
+    background-image: url("../images/main/last-section/3.png");
+    min-height: 28rem;
+  }
+
+  .product_img_first,
+  .product_img_second,
+  .product_img_third,
+  .product_img_forth {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-bg-div);
+  }
+}
 
 
-@media (min-width: 992px) { 
-  
- }
+@media (min-width: 992px) {}
 
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .carousel-inner {
     min-height: 280px;
   }
- }
+}
 
 
-@media (min-width: 1400px) { 
-
- }
+@media (min-width: 1400px) {}

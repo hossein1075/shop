@@ -2,7 +2,7 @@ const template =document.createElement('template')
 template.innerHTML = `
 <link rel="stylesheet" href="/components/footer/footer-user.css">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <div class="footer_content text-center pt-5">
+  <div class="footer_content overflow-x-hidden text-center pt-5">
       <div class="border-bottom">
         <div class="row py-xl-5">
           <div class="col-sm-12 col-xl-3">

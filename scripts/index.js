@@ -58,11 +58,16 @@ function startCount(ten) {
     const houre = Math.floor((left % 86400) / 3600);
     const minute = Math.floor((left % 3600) / 60);
     const seconde = left % 60;
-  
+  // slider header
     document.querySelector('#Days .number').innerText = format(day);
     document.querySelector('#Houres .number').innerText = format(houre);
     document.querySelector('#Minutes .number').innerText = format(minute);
     document.querySelector('#Seconds .number').innerText = format(seconde);
+    // section
+    document.querySelector('#Days_Off .number').innerText = format(day);
+    document.querySelector('#Houres_Off .number').innerText = format(houre);
+    document.querySelector('#Minutes_Off .number').innerText = format(minute);
+    document.querySelector('#Seconds_Off .number').innerText = format(seconde);
   }
   
   update()
@@ -167,19 +172,23 @@ slider.addEventListener('touchend', (e)=> {
 
 //  btn_view
 window.addEventListener('DOMContentLoaded', ()=> {
-  const btnView = document.getElementById('btn_view');
+  const btnView = document.querySelectorAll('.btn_view');
   //  mobile
-  btnView.addEventListener('click', ()=> {
-    btnView.classList.add('btn_view--hover')
+  btnView.forEach((btn)=> {
+    btn.addEventListener('click', ()=> {
+      btn.classList.add('btn_view--hover')
 
-    setTimeout(()=> {
-      btnView.classList.remove('btn_view--hover')
-    }, 1000)
+      setTimeout(()=> {
+        btn.classList.remove('btn_view--hover')
+      }, 1000)
+    })
+    btn.addEventListener('mouseenter', ()=> {
+      btn.classList.add('btn_view--hover')
+    })
+    btn.addEventListener('mouseleave', ()=> {
+      btn.classList.remove('btn_view--hover')
+    })
   })
-  btnView.addEventListener('mouseenter', ()=> {
-    btnView.classList.add('btn_view--hover')
-  })
-  btnView.addEventListener('mouseleave', ()=> {
-    btnView.classList.remove('btn_view--hover')
-  })
+  
 })
+
