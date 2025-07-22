@@ -22,11 +22,9 @@ html {
 }
 
 body {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-family: "Inter Regular";
-  /* background-color: var(--color-text-div); */
-  background-color: rebeccapurple;
+  line-height: 1.6 !important;
+  font-family: "Inter Regular" !important;
+  background-color: var(--color-text-div);
 }
 
 a {
@@ -37,17 +35,17 @@ a {
 /* Font */
 
 .Medium {
-  font-family: "Inter Medium";
+  font-family: "Inter Medium" !important;
   font-weight: 500 !important;
 }
 
 .SemiBold {
-  font-family: "Inter Inter SemiBold";
+  font-family: "Inter Inter SemiBold" !important;
   font-weight: 600 !important;
 }
 
 .Bold {
-  font-family: "Inter Inter Bold";
+  font-family: "Inter Inter Bold" !important;
   font-weight: 700 !important;
 }
 

@@ -73,6 +73,12 @@
   main {
     margin-top: 9rem;
 }
+.button_link {
+  padding: 1.3rem 0;
+}
+.button_link--google {
+  padding: .8rem 0;
+}
 }
 
 
