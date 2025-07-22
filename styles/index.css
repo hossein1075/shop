@@ -67,7 +67,7 @@ a {
 }
 
 .red_sections-c {
-  color: #DB4444;
+  color: #DB4444 !important;
 }
 .red_sections-bg {
   background-color: #DB4444 !important;
