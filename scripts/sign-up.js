@@ -1,3 +1,4 @@
+//  button creat account
 window.addEventListener('DOMContentLoaded', ()=> {
     const signButton = document.querySelector('.sign_button');
     //  mobile
