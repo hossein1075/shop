@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .link_underline:hover {
     text-decoration: underline !important;
 }

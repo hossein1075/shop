@@ -1,12 +1,16 @@
-
+html {
+    scroll-behavior: smooth;
+}
 
 main {
     margin: 7rem 0;
 }
+
 .sign_form {
     outline: none;
     box-shadow: none;
 }
+
 button {
     outline: none;
     padding: 1rem 0;
@@ -15,28 +19,33 @@ button {
 .btn_view--hover {
     background-color: #FF1744 !important;
 }
+
 .sign_form {
     max-width: 400px;
     width: 100%;
 }
+
 .sign_header {
     min-width: 25rem;
 }
+
 input {
     margin-bottom: 2.2rem !important;
 }
+
 .button_link {
     padding: 1.1rem 0;
 }
+
 .button_link--google {
     padding: .6rem 0;
 }
+
 .sign_input {
     min-width: 26rem;
 }
-.sign_log:hover {
-    text-decoration: underline;
-}
+
+
 .sign_title {
     font-size: 2.1rem;
 }

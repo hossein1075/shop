@@ -189,6 +189,16 @@ window.addEventListener('DOMContentLoaded', ()=> {
       btn.classList.remove('btn_view--hover')
     })
   })
+  // API
+  const loggedInUser = localStorage.getItem('loggedInUser')
+
+  if (!loggedInUser) {
+    window.location.href = 'login.html'
+  } else {
+    const user = JSON.parse(loggedInUser)
+    console.log('کاربر وارد شده:', user.name)
+
+  }
   
 })
 
